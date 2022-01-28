@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Heartrate animation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <main class="container">
+      <div id="heart">
+        <div id="heart-container">
+          <div id="left"></div>
+          <div id="right"></div>
+          <div id="bottom"></div>
+        </div>
+        <form oninput="result.value=parseInt(rate.value)">
+          <input type="range" name="rate" id="rate" value="60" min="0" max="210">
+          <output id="rate-output" name="result" for="rate">60</output><br>
+          <label for="rate">Accurate speed of heart rate</label>
+        </form>
+      </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

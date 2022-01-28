@@ -1,0 +1,71 @@
+.container,
+#heart {
+  display: flex;
+}
+
+#left,
+#right,
+#bottom {
+  background: inherit;
+  position: absolute;
+}
+ 
+#left,
+#right {
+  width: 100px;
+  height: 100px;
+}
+
+#right,
+#bottom {
+  transform: rotate(45deg);
+}
+
+#left {
+  border-radius: 0 0 100px 100px;
+  transform: rotate(135deg);
+}
+
+#right {
+  border-radius: 100px 100px 0 0;
+  left: 100px;
+}
+
+#bottom {
+  top: 84px;
+  left: 64px;
+  width: 72px;
+  height: 72px;
+}
+
+#heart-container {
+  width: 200px;
+  height: 0;
+  background: rgb(196, 32, 18);
+  position: relative;
+  transform-origin: center center;
+  animation: container ease-out 1s infinite;
+}
+
+@keyframes container {
+  0% {
+    transform: scale(0.3);
+    background: rgb(196, 32, 18);
+  }
+  25% {
+    transform: scale(0.35);
+    background: rgb(237, 40, 5);
+  }
+  50% {
+    transform: scale(0.335);
+    background: rgb(237, 40, 5);
+  }
+  75% {
+    transform: scale(0.4);
+    background: rgb(237, 40, 5);
+  }
+  100% {
+    transform: scale(0.3);
+    background: rgb(196, 32, 18);
+  }
+}
